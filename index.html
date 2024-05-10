@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick&Morty API</title>
+</head>
+<body>
+    <h1>Rick y Morty API</h1>
+    <a href="http://localhost:3000/characters">json de todos los personajes</a>
+    <h2>Personajes</h2>
+    <p>
+        <label for="characterName">Introduce el nombre para filtrar el personaje</label>
+        <input type="text" id="characterName" placeholder="Rick"/>
+        <button onclick="borrarFiltro()">Borrar filtro</button>
+    </p>
+    <button onclick='getCharacterInfo()'>Buscar</button>
+    <div id="characterInfo"></div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
